@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="162dp"
+        android:layout_height="164dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        android:backgroundTint="#202020"
+        android:backgroundTintMode="add">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@drawable/rn_edit_text_material"
+        android:gravity="center"
+        android:text="Ios Calculator"
+        android:textColor="#FFFCFC" />
+</LinearLayout>
