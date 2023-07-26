@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import {StyleSheet, Text, View} from 'react-native';
 import { Buttons } from '../components/Buttons';
 import { useCalculator } from '../hooks/useCalculator';
@@ -8,6 +9,10 @@ import { globalStyles } from '../theme/globalTheme';
 
 export const Calculator = () => {
   const {previousNumber, number, cleanNumber, positiveNegative, delAction, divideAction, numbersOperations, multiplyAction, restAction, sumAction, operationsResult} = useCalculator();
+
+  useEffect(()=>{
+    SplashScreen.hide();
+  },[]);
   return (
     <View style={globalStyles.calculatorContainer}>
       {
